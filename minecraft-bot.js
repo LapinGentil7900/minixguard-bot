@@ -107,7 +107,9 @@ function createBot() {
             console.log(`🛡️ Le serveur restera actif tant que le bot est connecté`);
         });
 
-
+        // Événement: Spawn dans le jeu
+        botInstance.on('spawn', () => {
+            console.log(`📍 ${BOT_USERNAME} est maintenant dans le jeu`);
             
             // Intervalle de statut
             if (statusInterval) clearInterval(statusInterval);
