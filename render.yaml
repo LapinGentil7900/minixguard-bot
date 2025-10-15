@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: minixguard-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node minecraft-bot.js
+    envVars:
+      - key: BOT_USERNAME
+        value: MinixGuard
+      - key: SERVER_HOST
+        value: minixjeux.aternos.me
+      - key: SERVER_PORT
+        value: 25565
+      - key: MINECRAFT_VERSION
+        value: 1.21.4
+      - key: PORT
+        value: 10000
+      - key: RECONNECT_DELAY
+        value: 30000
+      - key: STATUS_INTERVAL
+        value: 300000

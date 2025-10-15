@@ -1,0 +1,22 @@
+{
+  "name": "minixjeux-minecraft-bot",
+  "version": "1.0.0",
+  "main": "minecraft-bot.js",
+  "scripts": {
+    "start": "node minecraft-bot.js"
+  },
+  "keywords": [
+    "minecraft",
+    "bot",
+    "mineflayer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Bot Minecraft pour garder le serveur MinixJeux actif 24h/24",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "mineflayer": "^4.25.0"
+  }
+}
