@@ -111,15 +111,6 @@ function createBot() {
         botInstance.on('spawn', () => {
             console.log(`📍 ${BOT_USERNAME} est maintenant dans le jeu`);
             
-            // Message de bienvenue
-            setTimeout(() => {
-                try {
-                    botInstance.chat('Bot de maintenance connecté ✅');
-                } catch (err) {
-                    // Ignore les erreurs de chat
-                }
-            }, 1000);
-            
             // Intervalle de statut
             if (statusInterval) clearInterval(statusInterval);
             statusInterval = setInterval(() => {
